@@ -113,9 +113,8 @@ Experiment 2 trains a GRU on input-output data, where the input contains the app
 the membrane width w and the air viscosity u. The dataset contains 500 examples with random combinations of input and parameter values. 
 To replicate this experiment navigate to beam-param folder and use the following training and/or evaluation commands:   
 
-```
 
->📋 GRU 
+>📋 GRU
 
 ```train
 python train.py -model 'GRU' -hidden_size 16 -batch_size 512 -datapath "Dataset3_param/" -savepath "Experiment2/GRU/16/Run*/"
