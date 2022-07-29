@@ -107,7 +107,22 @@ python eval.py -model 'GRU' -datapath "Dataset2/" -savepath "Experiment1/GRU/8/R
 | Validation Set   |  0.1335    | 0.0759     | 0.0896     |  0.1928    | 0.1781     |  0.1378    |
 
 
+### Parameter-aware models
 
+Experiment 2 trains a GRU on input-output data, where the input contains the applied voltage (v(t)), the membrane length l, 
+the membrane width w and the air viscosity u. The dataset contains 500 examples with random combinations of input and parameter values. 
+To replicate this experiment navigate to beam-param folder and use the following training and/or evaluation commands:   
+
+```
+
+>📋 GRU 
+
+```train
+python train.py -model 'GRU' -hidden_size 16 -batch_size 512 -datapath "Dataset3_param/" -savepath "Experiment2/GRU/16/Run*/"
+```
+```eval
+python eval.py -model 'GRU' -batch_size 512 -datapath "Dataset3_param/" -savepath "Experiment1/GRU/16/Run*/"
+```
 
 
 ## Contributing
