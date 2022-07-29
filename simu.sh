@@ -1,0 +1,7 @@
+python train.py -savepath "./Experiment1/GRU/4/Run4/"  
+python train.py -savepath "./Experiment1/GRU/4/Run5/" 
+python train.py -savepath "./Experiment1/GRU/4/Run6/" 
+python train.py -savepath "./Experiment1/GRU/4/Run7/" 
+python train.py -savepath "./Experiment1/GRU/4/Run8/" 
+python train.py -savepath "./Experiment1/GRU/4/Run9/" 
+python train.py -savepath "./Experiment1/GRU/4/Run10/"
